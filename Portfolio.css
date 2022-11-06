@@ -1,0 +1,96 @@
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    /* background-color:#7659e5; */
+    /* background-color:#E97777;*/
+    background-color:#00ABB3;
+}    
+
+.portfolio-nav,a{
+    display:flex;
+    list-style-type:none;
+    padding:15px;
+    justify-content:space-between;
+    color:#3C4048;
+    font-weight:750;
+    text-decoration:none;
+}
+
+a:hover{
+    color:black;
+}
+
+.portfolio-dashboard{
+    
+}
+
+.portfolio-img{
+    margin-left:65%;
+    margin-top:-35%;
+    z-index:1;
+    position:relative;
+    border-radius:35%;
+    height:450px;
+    width:400px;
+    padding:2px;
+}
+
+.tushar-img{
+    margin-left:-300px;
+    margin-top:-300px;
+    border:1px solid;
+    border-radius:50%;
+    z-index:2;
+    position:absolute;
+}
+
+.portfolio-intro{
+    width:600px;
+    color:black;
+    font-weight:500;
+    margin-left:100px;
+    padding:10px;
+}
+
+.portfolio-intro-btn{
+    display:flex;
+}
+
+.portfolio-stats{
+    border:1px solid;
+    border-radius:20px;
+    text-align:center;
+    justify-content:space-between;
+    padding:8px;
+    display:flex;
+    width:550px;
+}
+
+.portfolio-stats-hr{
+    border-left:2px solid black;
+    height:110px;
+}
+
+.portfolio-skill-main{
+    margin-left:7%;
+    margin-top:7%;
+}
+
+.portfolio-skill-section{
+    display:flex;
+    margin-left:3%;
+}
+
+.portfolio-skill{
+    display:flex;
+    flex-direction:column;
+}
+
+.portfolio-skill-img{
+    width:100px;
+    border:0.5px solid;
+    border-radius:50%;
+    margin-bottom:15px;
+    margin-top:15px;
+}
