@@ -144,12 +144,37 @@ a:hover{
 
 
 .portfolio-contactus-form{
-    /* background-color:green; */
-    margin-left:10%;
-    margin-top:3%;
+    background-color:white;
+    margin-left:15%;
+    margin-top:0%;
     padding:10px;
+    border:1px solid;
+    width:500px;
+    height:410px;
+    border-radius:25px;
 }
 
 .portfolio-contactus-input{
-    width:400px;
+    width:450px;
+    padding:5px;
+    border:0.5px solid;
+}
+
+.contact-label{
+    font-weight:600;
+    margin:10px;
+}
+
+.contactform-btn{
+    width:300px;
+    height:50px;
+    margin-left:80px;
+}
+
+.portfolio-social-icons-main{
+    display:flex;
+}
+
+.portfolio-social-icons{
+    
 }

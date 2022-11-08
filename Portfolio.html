@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="PortfolioIcons.css">
 </head>
 
 <body>
@@ -240,23 +243,45 @@
 
     <div id="contact" class="portfolio-contactus-main">
         <div class="col-md-5 portfolio-contactus-info">
-            <h1>Contact Us</h1>
-            <p>Need to get in touch with us.Fill the form provided with your query..</p>
-            <p><span></span> 221 B Baker Street,Chalisgaon-424101,Maharashtra,India</p>
-            <p><span></span>+91 95135 15632</p>
-            <p><span></span>info@webdev.com</p>
+            <h1>Get in Touch</h1>
+            <address style="font-weight:500;color:#000">
+                <p>Need to get in touch with us.Fill the form provided with your query..</p>
+                <span >Tushar Chaudhari</span><br/>
+                info@webDev.com<br/>
+                <span></span>+91 95135 15632<br/>
+                <span></span> 221 B Baker Street,<br/>
+                Chalisgaon-424101,Maharashtra,<br/>
+                India
+            </address>
+            <div class="portfolio-social-icons-main">
+                <span class="portfolio-social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                </span>
+                <span class="portfolio-social-icons">
+                    <a href="#" class="fa fa-twitter"></a>
+                </span>
+                <span class="portfolio-social-icons">
+                    <a href="#" class="fa fa-instagram"></a>
+                </span>
+                <span class="portfolio-social-icons">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </span>
+                <span class="portfolio-social-icons">
+                    <a href="#" class="fa fa-github"></a>
+                </span>
+            </div>
         </div>
         <div class="col-md-7 portfolio-contactus-form">
-            <form>
-                <label for="name" class="form-label">Name</label>
-                <input type="text" name="name" id="name" class="form-control portfolio-contactus-input">
+            <form class="mb-3">
+                <label for="name" class="form-label contact-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control portfolio-contactus-input" placeholder="Enter your Name">
 
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" id="email" class="form-control portfolio-contactus-input" >
+                <label for="email" class="form-label contact-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control portfolio-contactus-input" placeholder="Enter your Email">
 
-                <label for="message" class="form-label">Message</label>
-                <textarea type="text" name="message" id="message" class="form-control" rows="4" cols="3"></textarea>
-                <button type="submit" class="btn btn-primary my-4">Send Message</button>
+                <label for="message" class="form-label contact-label">Message</label>
+                <textarea type="text" name="message" id="message" class="form-control portfolio-contactus-input" rows="4" cols="3" placeholder="Enter your Message"></textarea>
+                <button type="submit" class="btn btn-danger btn-lg  my-4 contactform-btn">Send Message</button>
             </form>
         </div>
     </div>
