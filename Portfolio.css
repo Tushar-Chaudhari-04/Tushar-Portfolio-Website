@@ -1,10 +1,14 @@
+.scroll-page{
+    scroll-behavior: smooth;
+}
+
 body{
     margin:0;
     padding:0;
     overflow-x:hidden;
     /* background-color:#3f425a; */
-    background-color:#00ABB3;
     /* background-color:#00ABB3; */
+    background-color:#FFB200;
 }    
 
 .portfolio-nav,a{
@@ -12,7 +16,8 @@ body{
     list-style-type:none;
     padding:15px;
     justify-content:space-between;
-    color:#3C4048;
+    color:#1F4690;
+    /* color:#ffff; */
     font-weight:750;
     text-decoration:none;
 }
@@ -134,12 +139,13 @@ a:hover{
     display:flex;
     width:80%;
     margin-left:5%;
-    margin-top:75%;
+    margin-top:80%;
 }
 
 .portfolio-contactus-info{
     /* background-color:yellow; */
     padding:10px;
+    border:2px dashed;
 }
 
 
@@ -148,16 +154,16 @@ a:hover{
     margin-left:15%;
     margin-top:0%;
     padding:10px;
-    border:1px solid;
+    border:2px dashed;
     width:500px;
-    height:410px;
+    height:540px;
     border-radius:25px;
 }
 
 .portfolio-contactus-input{
     width:450px;
     padding:5px;
-    border:0.5px solid;
+    border:0.5px dotted;
 }
 
 .contact-label{
@@ -173,8 +179,17 @@ a:hover{
 
 .portfolio-social-icons-main{
     display:flex;
+    margin:7px -30px;
+    margin-top:120px;
+    margin-left:50px;
 }
 
 .portfolio-social-icons{
     
+}
+
+.portfolio-footer{
+    text-align:center;
+    padding:10px;
+    margin:10px;
 }
