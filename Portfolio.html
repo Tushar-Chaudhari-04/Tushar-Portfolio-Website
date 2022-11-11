@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,31 +18,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script>
-    $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-        // Store hash
-        var hash = this.hash;
-        console.log(hash);
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 1000, function(){
-            // console.log(scrollTop);
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-            console.log(window.location.hash)
+                    // Store hash
+                    var hash = this.hash;
+                    console.log(hash);
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function () {
+                        // console.log(scrollTop);
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                        console.log(window.location.hash)
+                    });
+                } // End if
+            });
         });
-        } // End if
-    });
-    });
     </script>
 </head>
 
@@ -54,11 +55,11 @@
             <li style="margin:10px;"><a href="#myprojects">My Projects</a></li>
             <li style="margin:10px;"><a href="#contact">Contact Me</a></li>
             <li style="margin:3px;"><a href="https://github.com/Tushar-Chaudhari-04" target="_blank">
-                <img src="./images/github.png" alt="GitHub Icon" width="32px">
-            </a></li>
+                    <img src="./images/github.png" alt="GitHub Icon" width="32px">
+                </a></li>
             <li style="margin:2px;"><a href="https://www.linkedin.com/in/tushar-chaudhari-0404" target="_blank">
-                <img src="./images/linkedin3.png" alt="LinkedIn Icon" width="32px">
-            </a></li>
+                    <img src="./images/linkedin3.png" alt="LinkedIn Icon" width="32px">
+                </a></li>
         </ul>
     </nav>
 
@@ -75,7 +76,7 @@
             <div class="row portfolio-stats">
                 <div class="col-md-3" style="padding:10px;">
                     <h2 style="font-weight:1000;">15</h2>
-                    <span >Verified Skills</span>
+                    <span>Verified Skills</span>
                 </div>
                 <div class="col-md-1 portfolio-stats-hr" style="padding:10px;"></div>
                 <div class="col-md-3" style="padding:10px;">
@@ -91,14 +92,14 @@
             <br />
             <div class="portfolio-intro-btn">
                 <a href="#myprojects"><button class="btn btn-danger btn-lg intro-btn">View My Work</button></a>
-               <a href="#contact"><button class="btn btn-outline-dark btn-lg  mx-4 intro-btn">Contact Me</button></a>
+                <a href="#contact"><button class="btn btn-outline-dark btn-lg  mx-4 intro-btn">Contact Me</button></a>
             </div>
         </div>
         <img class="portfolio-img" src="./images/full-stack-development.gif" alt="DemoImage" width="350px">
         <!-- <img class="tushar-img" src="./images/tushar.jpg" alt="Tushar Image" width="250px"> -->
     </div>
 
-    <div id="skills" class="row portfolio-skill-main scroll-page" >
+    <div id="skills" class="row portfolio-skill-main scroll-page">
         <h2>Skills Acquried</h2>
         <div style="padding:15px;"></div>
         <div class="portfolio-skill-section">
@@ -126,7 +127,7 @@
                 <img class="portfolio-skill-img" src="./images/http.png" alt="React image">
                 <span>HTTP</span>
             </div>
-            
+
         </div>
 
         <div class="portfolio-skill-section">
@@ -209,20 +210,24 @@
 
     <div id="myprojects" class="portfolio-projects scroll-page">
         <h2>My Projects</h2>
-        <br/>
+        <br />
         <div class="portfolio-project-section">
             <div class="portfolio-project-details">
                 <h2>Shopify</h2>
                 <p><strong>Jan 2023</strong></p>
-                <p><strong>"Shopify is an E-commerce application offering a variety of products for customers to choose from.</strong> </p>
+                <p><strong>"Shopify is an E-commerce application offering a variety of products for customers to choose
+                        from.</strong> </p>
                 <p><strong>During the course of this project,</p></strong>
                 <ul>
-                    <li><strong>Built the complete set of REST APIs for an E-commerce application following the best practices</strong> </li>
+                    <li><strong>Built the complete set of REST APIs for an E-commerce application following the best
+                            practices</strong> </li>
                     <li><strong>Used MongoDB NoSQL database for data storage</strong></li>
                     <li><strong>Wrote unit and integration tests to test the implementation"</strong></li>
                     <li><strong>Implemented the core logic for authentication, shopping cart and checkout</strong></li>
-                    <li><strong>Improved UI by adding responsive design elements for uniform experience across different devices</strong></li>
-                    <li><strong>Utilized REST APIs to dynamically load and render data served by the backend server</strong></li>
+                    <li><strong>Improved UI by adding responsive design elements for uniform experience across different
+                            devices</strong></li>
+                    <li><strong>Utilized REST APIs to dynamically load and render data served by the backend
+                            server</strong></li>
                 </ul>
             </div>
             <div class="portfolio-project-image">
@@ -234,7 +239,9 @@
             <div class="portfolio-project-details">
                 <h2>XFLIX</h2>
                 <p><strong>DEC 2022</strong></p>
-                <p><strong>XFlix is a video sharing platform which hosts videos for the world to watch. It also features uploading new videos by using external video links (eg: Youtube) and playing these videos.</strong> </p>
+                <p><strong>XFlix is a video sharing platform which hosts videos for the world to watch. It also features
+                        uploading new videos by using external video links (eg: Youtube) and playing these
+                        videos.</strong> </p>
                 <p><strong>During the course of this project,</p></strong>
                 <ul>
                     <li><strong>Built XFlix backend using Node.js, Express.js and MongoDB from scratch</strong> </li>
@@ -254,10 +261,12 @@
             <div class="portfolio-project-details">
                 <h2>MakeMyTravel</h2>
                 <p><strong>Nov 2022</strong></p>
-                <p><strong>MakeMyTravel is a travel website aimed at travellers looking for a multitude of adventures in different cities. </strong> </p>
+                <p><strong>MakeMyTravel is a travel website aimed at travellers looking for a multitude of adventures in
+                        different cities. </strong> </p>
                 <p><strong>During the course of this project,</p></strong>
                 <ul>
-                    <li><strong>Created web pages using HTML and CSS and made them dynamic using JavaScript</strong> </li>
+                    <li><strong>Created web pages using HTML and CSS and made them dynamic using JavaScript</strong>
+                    </li>
                     <li><strong>Improved UX with multi-select filters, image carousels</strong></li>
                     <li><strong>Utilised localStorage to persist user preferences at client-side</strong></li>
                     <li><strong>Created 3 different web pages from Wireframe layout using HTML and CSS</strong></li>
@@ -276,9 +285,12 @@
             <h1>Get in Touch</h1>
             <address style="font-weight:500;color:#000">
                 <p>Need to get in touch with us.Fill the form provided with your query..</p>
-                <i class="material-icons" style="margin-right:2px;font-size:20px;margin-bottom:20px;">person</i>Tushar Chaudhari<br/>
-                <i class="material-icons" style="margin-right:2px;font-size:20px;margin-bottom:20px;">mail</i>info@webDev.com<br/>
-                <i class="material-icons" style="margin-right:2px;font-size:20px;margin-bottom:20px;">phone</i>+91 95135 15632<br/>
+                <i class="material-icons" style="margin-right:2px;font-size:20px;margin-bottom:20px;">person</i>Tushar
+                Chaudhari<br />
+                <i class="material-icons"
+                    style="margin-right:2px;font-size:20px;margin-bottom:20px;">mail</i>info@webDev.com<br />
+                <i class="material-icons" style="margin-right:2px;font-size:20px;margin-bottom:20px;">phone</i>+91 95135
+                15632<br />
                 <i class="material-icons" style="margin-right:2px;font-size:20px;">add_location</i>
                 <span>221 B Baker Street,Chalisgaon-424101,India
                 </span>
@@ -294,7 +306,8 @@
                     <a href="#" class="fa fa-instagram"></a>
                 </span>
                 <span class="portfolio-social-icons">
-                    <a href="https://www.linkedin.com/in/tushar-chaudhari-0404" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.linkedin.com/in/tushar-chaudhari-0404" target="_blank"
+                        class="fa fa-linkedin"></a>
                 </span>
                 <span class="portfolio-social-icons">
                     <a href="https://github.com/Tushar-Chaudhari-04" class="fa fa-github" target="_blank"></a>
@@ -305,13 +318,16 @@
             <form class="mb-3">
                 <h2 style="margin-top:28px;margin-left:5px;">Contact Us</h2>
                 <label for="name" class="form-label contact-label">Name</label>
-                <input type="text" name="name" id="name" class="form-control portfolio-contactus-input" placeholder="Enter your Name">
+                <input type="text" name="name" id="name" class="form-control portfolio-contactus-input"
+                    placeholder="Enter your Name">
 
                 <label for="email" class="form-label contact-label">Email</label>
-                <input type="email" name="email" id="email" class="form-control portfolio-contactus-input" placeholder="Enter your Email">
+                <input type="email" name="email" id="email" class="form-control portfolio-contactus-input"
+                    placeholder="Enter your Email">
 
                 <label for="message" class="form-label contact-label">Message</label>
-                <textarea type="text" name="message" id="message" class="form-control portfolio-contactus-input" rows="4" cols="3" placeholder="Enter your Message"></textarea>
+                <textarea type="text" name="message" id="message" class="form-control portfolio-contactus-input"
+                    rows="4" cols="3" placeholder="Enter your Message"></textarea>
                 <button type="submit" class="btn btn-danger btn-lg  my-4 contactform-btn">Send Message</button>
             </form>
         </div>
@@ -319,7 +335,7 @@
 
     <footer>
         <p class="portfolio-footer">Copyright © 2022 <span>All rights reserved</span></p>
-       
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
