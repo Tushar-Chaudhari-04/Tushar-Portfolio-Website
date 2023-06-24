@@ -72,8 +72,8 @@ a:hover{
     justify-content:space-between;
     padding:8px;
     display:flex;
-    width:550px;
-    font-weight:600;
+    width:700px;
+    font-weight:500;
 }
 
 .portfolio-stats-hr{
@@ -185,7 +185,8 @@ a:hover{
 }
 
 .portfolio-social-icons{
-    
+    justify-content:center;
+    align-items:center;
 }
 
 .portfolio-footer{

@@ -43,16 +43,23 @@
                 } // End if
             });
         });
+
+        var currentYear=new Date().getFullYear();
+        function insertText(){
+            document.getElementById("pro-footer").innerHTML="Copyright © "+currentYear +" All rights reserved";
+            console.log("currentYear",currentYear)
+        }
+        
     </script>
 </head>
 
-<body>
+<body onload="insertText()">
     <nav class="d-flex flex-row-reverse sticky-top">
         <ul class="portfolio-nav">
-            <!-- <li style="margin:10px;">Work Experience</li> -->
             <li style="margin:10px;"><a href="#">Home</a></li>
-            <li style="margin:10px;"><a href="#skills">Skills Acquired</a></li>
+            <!-- <li style="margin:10px;">Work Experience</li> -->
             <li style="margin:10px;"><a href="#myprojects">My Projects</a></li>
+            <li style="margin:10px;"><a href="#skills">Skills Acquired</a></li>
             <li style="margin:10px;"><a href="#contact">Contact Me</a></li>
             <li style="margin:3px;"><a href="https://github.com/Tushar-Chaudhari-04" target="_blank">
                     <img src="./images/github.png" alt="GitHub Icon" width="32px">
@@ -84,9 +91,9 @@
                     <span>Professional Projects</span>
                 </div>
                 <div class="col-md-1 portfolio-stats-hr" style="padding:10px;"></div>
-                <div class="col-md-3" style="padding:10px;">
-                    <h2 style="font-weight:1000;">150+</h2>
-                    <span>DSA Problems Solved</span>
+                <div class="col-md-3" style="padding:6px;">
+                    <h2 style="font-weight:1000;">2+ years</h2>
+                    <span>Professional Experience</span>
                 </div>
             </div>
             <br />
@@ -194,8 +201,8 @@
                 <span>Git & Github</span>
             </div>
             <div class="col-md-2 portfolio-skill">
-                <img class="portfolio-skill-img" src="./images/aws.png" alt="React image">
-                <span>AWS</span>
+                <img class="portfolio-skill-img" src="./images/postman1.png" alt="React image">
+                <span>PostMan</span>
             </div>
             <!-- <div class="col-md-2 portfolio-skill">
                 <img class="portfolio-skill-img" src="./images/docker.png" alt="React image">
@@ -211,23 +218,42 @@
     <div id="myprojects" class="portfolio-projects scroll-page">
         <h2>My Projects</h2>
         <br />
+
         <div class="portfolio-project-section">
             <div class="portfolio-project-details">
-                <h2>Shopify</h2>
-                <p><strong>Jan 2023</strong></p>
-                <p><strong>"Shopify is an E-commerce application offering a variety of products for customers to choose
+                <h2>SocioMania</h2>
+                <p><strong>SocioMania is a social media application  </strong> </p>
+                <p><strong>During the course of this project,</p></strong>
+                <ul>
+                    <li><strong>Developed a full-stack social media application using MERN (MongoDB,Express.js,React.js,Node.js) stack.</strong></li>
+                    <li><strong>Implemented user registration and authentication via JWT(JSON Web Token)</strong></li>
+                    <li><strong>Design an intuitive user interface using React.js, HTML5, CSS3, and Javascript.</strong></li>
+                    <li><strong>Utilized Redux for centralized state management for the application and MongoDB (No-SQL Database) with Mongoose for efficient data storage and retrieval.</strong></li>
+                    <li><strong>Utilized Bootstrap extensively for responsive design</strong></li>
+                    <li><strong>Implemented real-time features like uploading posts, Like a post, getting friends' suggestions, view followers/following's posts in SocioMania.</strong></li>
+                    <li><strong>Deployed the SocioMania at render.</strong></li>
+                </ul>
+
+            </div>
+            <div class="portfolio-project-image">
+                <img src="./images/social-media.png" alt="Travel Image" width="400px;">
+            </div>
+        </div>
+
+        <div class="portfolio-project-section">
+            <div class="portfolio-project-details">
+                <h2>Posterz.</h2>
+                <!-- <p><strong>Jan 2023</strong></p> -->
+                <p><strong>"Posterz is an E-commerce application offering a variety of posters for customers to choose
                         from.</strong> </p>
                 <p><strong>During the course of this project,</p></strong>
                 <ul>
-                    <li><strong>Built the complete set of REST APIs for an E-commerce application following the best
-                            practices</strong> </li>
-                    <li><strong>Used MongoDB NoSQL database for data storage</strong></li>
-                    <li><strong>Wrote unit and integration tests to test the implementation"</strong></li>
-                    <li><strong>Implemented the core logic for authentication, shopping cart and checkout</strong></li>
+                    <li><strong>Developed a full-stack e-commerce application using MERN stack, Strapi, and Stripe.</strong> </li>
+                    <li><strong>Design an intuitive and responsive user interface using React. js,HTML5, CSS3 and Javascript.</strong></li>
+                    <li><strong>Utilized Redux for centralized state management for the front end and strapi for a content management system for the backend.Also configured checkout with stripe as payment gateway.</strong></li>
                     <li><strong>Improved UI by adding responsive design elements for uniform experience across different
                             devices</strong></li>
-                    <li><strong>Utilized REST APIs to dynamically load and render data served by the backend
-                            server</strong></li>
+                    <li><strong>Implemented features like products added by category, filter products by category, price and newest arrival, shopping cart, and payment functionality via Stripe(Payment Gateway System).</strong></li>        
                 </ul>
             </div>
             <div class="portfolio-project-image">
@@ -238,7 +264,6 @@
         <div class="portfolio-project-section">
             <div class="portfolio-project-details">
                 <h2>XFLIX</h2>
-                <p><strong>DEC 2022</strong></p>
                 <p><strong>XFlix is a video sharing platform which hosts videos for the world to watch. It also features
                         uploading new videos by using external video links (eg: Youtube) and playing these
                         videos.</strong> </p>
@@ -257,27 +282,6 @@
             </div>
         </div>
 
-        <div class="portfolio-project-section">
-            <div class="portfolio-project-details">
-                <h2>MakeMyTravel</h2>
-                <p><strong>Nov 2022</strong></p>
-                <p><strong>MakeMyTravel is a travel website aimed at travellers looking for a multitude of adventures in
-                        different cities. </strong> </p>
-                <p><strong>During the course of this project,</p></strong>
-                <ul>
-                    <li><strong>Created web pages using HTML and CSS and made them dynamic using JavaScript</strong>
-                    </li>
-                    <li><strong>Improved UX with multi-select filters, image carousels</strong></li>
-                    <li><strong>Utilised localStorage to persist user preferences at client-side</strong></li>
-                    <li><strong>Created 3 different web pages from Wireframe layout using HTML and CSS</strong></li>
-                    <li><strong>Utilized Bootstrap extensively for responsive design</strong></li>
-                    <li><strong>Deployed the website to Netlify</strong></li>
-                </ul>
-            </div>
-            <div class="portfolio-project-image">
-                <img src="./images/travel.png" alt="Travel Image" width="350px;">
-            </div>
-        </div>
     </div>
 
     <div id="contact" class="portfolio-contactus-main scroll-page">
@@ -288,15 +292,14 @@
                 <i class="material-icons" style="margin-right:2px;font-size:20px;margin-bottom:20px;">person</i>Tushar
                 Chaudhari<br />
                 <i class="material-icons"
-                    style="margin-right:2px;font-size:20px;margin-bottom:20px;">mail</i>info@webDev.com<br />
-                <i class="material-icons" style="margin-right:2px;font-size:20px;margin-bottom:20px;">phone</i>+91 95135
-                15632<br />
+                    style="margin-right:2px;font-size:20px;margin-bottom:20px;">mail</i>tushar.c8942@gmail.com<br />
+                <i class="material-icons" style="margin-right:2px;font-size:20px;margin-bottom:20px;">phone</i>+91 9588454481<br />
                 <i class="material-icons" style="margin-right:2px;font-size:20px;">add_location</i>
-                <span>221 B Baker Street,Chalisgaon-424101,India
+                <span>Chalisgaon-424101,Jalgaon,MH,India
                 </span>
             </address>
             <div class="portfolio-social-icons-main">
-                <span class="portfolio-social-icons">
+                <!-- <span class="portfolio-social-icons">
                     <a href="#" class="fa fa-facebook"></a>
                 </span>
                 <span class="portfolio-social-icons">
@@ -304,14 +307,14 @@
                 </span>
                 <span class="portfolio-social-icons">
                     <a href="#" class="fa fa-instagram"></a>
-                </span>
-                <span class="portfolio-social-icons">
+                </span>-->
+                <!-- <span class="portfolio-social-icons">
                     <a href="https://www.linkedin.com/in/tushar-chaudhari-0404" target="_blank"
                         class="fa fa-linkedin"></a>
                 </span>
                 <span class="portfolio-social-icons">
                     <a href="https://github.com/Tushar-Chaudhari-04" class="fa fa-github" target="_blank"></a>
-                </span>
+                </span> -->
             </div>
         </div>
         <div class="col-md-7 portfolio-contactus-form">
@@ -334,7 +337,7 @@
     </div>
 
     <footer>
-        <p class="portfolio-footer">Copyright © 2022 <span>All rights reserved</span></p>
+        <p class="portfolio-footer" id="pro-footer"></p>
 
     </footer>
 
